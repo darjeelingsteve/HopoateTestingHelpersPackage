@@ -6,15 +6,16 @@ import PackageDescription
 let package = Package(
     name: "HopoateTestingHelpersPackage",
     platforms: [
-        .iOS(.v12),
-        .tvOS(.v12),
-        .watchOS(.v5)
+        .iOS(.v13),
+        .tvOS(.v13),
+        .watchOS(.v6),
+        .macOS(.v10_15)
     ],
     products: [
         .library(name: "HopoateTestingHelpersPackage", type: .dynamic, targets: ["HopoateTestingHelpersPackage"])
     ],
     dependencies: [
-        .package(name: "Hopoate", url: "https://github.com/darjeelingsteve/hopoate", from: "1.8.0")
+        .package(name: "Hopoate", url: "https://github.com/darjeelingsteve/hopoate", from: "1.11.0")
     ],
     targets: [
         .target(
